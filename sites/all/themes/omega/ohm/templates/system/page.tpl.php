@@ -72,27 +72,24 @@
 ?>
 <div class="l-page">
   <header class="l-header" role="banner">
-    <a href="<?php print $front_page; ?>" class="sublogo"><img src="/sites/default/files/slider-logo.png" alt="Vertical Bridge" /></a>
+    <a href="<?php print $front_page; ?>" class="sublogo"><img src="/sites/default/files/logo-white.png" alt="Vertical Bridge" /></a>
     <?php print render($page['header']); ?>
 	<a href="javascript:;" class="mobile-menu-btn center hidden">&equiv; Menu</a>
     <?php print render($page['navigation']); ?>
   </header>
 
   <div class="l-main">
-	<div class="l-above-content" role="main">
-		<?php print render($page['above_content']); ?>
-	</div>
+	<!-- <div class="l-above-content" role="main">
+		<?php// print render($page['above_content']); ?>
+	</div> -->
 	<div class="internal-header">
-		
+        <h3 class="page-title"><?php print $title; ?></h3>
 	</div>
     <div class="l-content internal-page" role="main">
       <?php print render($page['highlighted']); ?>
       <?php //print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h3 class="page-title"><?php print $title; ?></h3>
-      <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
@@ -110,11 +107,9 @@
 
   <footer class="l-footer" role="contentinfo">
 		<br />
-		<p class="center"><img src="/sites/default/files/footer-logo.png" alt="Vertical Bridge" /></p>
 		<?php print render($page['footer']); ?>
-		<br />
 		<div class="lower-footer">
-			&copy; <?php echo date('Y'); ?> Vertical Bridge, LLC. All rights reserved | <a href="/terms-of-use">Terms of Use</a><br />Web Development: <a href="http://www.thatagency.com/">THAT Agency</a>
+			&copy; <?php echo date('Y'); ?> Vertical Bridge, LLC. All rights reserved | <a href="/terms-of-use">Terms of Use</a>
 		</div>
   </footer>
 </div>
