@@ -1,0 +1,5 @@
+name = Vertical Bridge Custom Module
+description = Custom functions for Vertical Bridge
+core = 7.x
+package = verticalbridge
+files[] = views/verticalbridge_handler_filter_omnisearch.inc
