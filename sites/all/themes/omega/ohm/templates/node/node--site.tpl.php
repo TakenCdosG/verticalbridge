@@ -106,8 +106,15 @@
             print render($content['field_mta_name']);
             print render($content['field_msa_rsa_name']);
             
-            $lat = $content['field_geolocation']['#object']->field_geolocation['und'][0]['lat'];
-            $lng = $content['field_geolocation']['#object']->field_geolocation['und'][0]['lng'];
+            $lat = '';
+            $lng = '';
+            if(!empty($content['field_geolocation']['#object'])){
+                $lat = $content['field_geolocation']['#object']->field_geolocation['und'][0]['lat'];
+            }
+            if(!empty($content['field_geolocation']['#object'])){
+                $lng = $content['field_geolocation']['#object']->field_geolocation['und'][0]['lng'];
+            }
+
 
         ?>
             <div class="field field--name-field-lat-lng field--type-text field--label-above">
