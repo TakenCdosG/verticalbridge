@@ -1599,8 +1599,8 @@ body{
     border:none;
     background-image: none;
 }
-.ui-widget-content{
-    padding:0 !important;
+.ui-accordion  .ui-widget-content{
+    padding:0!important;
 }
 .ui-state-default{
     padding:17px 30px !important;
@@ -1628,6 +1628,7 @@ body{
 .ui-state-default .ui-icon{
     background: url("../images/plus.png") no-repeat center;
 }
+
 /*footer*/
 .lower-footer{
     background: none;
@@ -1636,4 +1637,11 @@ body{
 .l-region--footer .menu a{
     font-size: 0.9rem;
     font-weight: 600;
+}
+/*media queries*/
+@media screen and (max-width:1024px){
+.internal-page{
+    padding:35px 25px;
+}
+
 }
