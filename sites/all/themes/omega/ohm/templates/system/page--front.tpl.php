@@ -73,7 +73,7 @@
 <div class="l-page">
 	<?php print $messages; ?>
 	<header class="l-header" role="banner">
-		<a href="<?php print $front_page; ?>" class="sublogo"><img src="/sites/default/files/logo-white.png" alt="Vertical Bridge" /></a>
+		<a href="<?php print $front_page; ?>" class="sublogo"><div class="image"></div></a>
 		<?php print render($page['header']); ?>
 		<a href="javascript:;" class="mobile-menu-btn center hidden">&equiv; Menu</a>
 		<?php print render($page['navigation']); ?>
