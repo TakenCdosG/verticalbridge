@@ -1251,12 +1251,7 @@ a.back-button {
     border-radius: 12px;
 }
 
-@media (max-width:953px) {
-    .mobile-menu-btn {
-        display: block;
-    }
 
-}
 
 .l-region--navigation {
     /*background: #59595c;*/
@@ -1550,18 +1545,20 @@ body{
 /*header*/
 .l-header{
     background: #59595c;
-    height: 96px;
     overflow: hidden;
     margin-top:12px;
 }
-.sublogo .image{
+a.sublogo{
     float:left;
     width:244px;
     height: 76px;
     margin: 10px 35px;
     max-width: 100%;
-    background: url("../images/logo-white.png");
-    background-size: cover;
+    
+}
+
+.l-region--navigation .menu.visible {
+    width: 100%;
 }
 .block--nav-bar a {
     padding:2.33em 0.86em;
@@ -1704,6 +1701,28 @@ body{
 .l-region--footer .menu a{
     font-size: 0.9rem;
     font-weight: 600;
+}
+
+
+@media (max-width:953px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .block--nav-bar a {
+        padding: 1.2em 1em;
+    }
+
+    a.sublogo {
+        float: none;
+        margin: 10px auto;
+        max-width: 80%;
+        display: block;
+    }
+
+    .mobile-menu-btn {
+        padding: 15px;
+    }
 }
 /*media queries*/
 @media screen and (max-width:1024px){
