@@ -1710,6 +1710,9 @@ a.sublogo{
     .mobile-menu-btn {
         padding: 15px;
     }
+    .l-region--footer .menu a {
+        font-size: 0.7rem;
+    }
 }
 /*media queries*/
 @media screen and (max-width:1024px){
