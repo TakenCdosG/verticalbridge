@@ -105,7 +105,7 @@
             print render($content['field_bta_name']);
             print render($content['field_mta_name']);
             print render($content['field_msa_rsa_name']);
-            
+
             $lat = '';
             $lng = '';
             if(!empty($content['field_geolocation']['#object'])){
