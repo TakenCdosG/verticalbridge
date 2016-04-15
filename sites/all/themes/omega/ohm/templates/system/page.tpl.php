@@ -72,7 +72,7 @@
 ?>
 <div class="l-page">
   <header class="l-header" role="banner">
-      <a href="<?php print $front_page; ?>" class="sublogo"><img id="" src="<?php print path_to_theme(); ?>/images/logo-white.png"> </a>
+      <a href="<?php print $front_page; ?>" class="sublogo"><img id="" src="/<?php print path_to_theme(); ?>/images/logo-white.png"> </a>
     <?php print render($page['header']); ?>
 	<a href="javascript:;" class="mobile-menu-btn center hidden">&equiv; Menu</a>
     <?php print render($page['navigation']); ?>
