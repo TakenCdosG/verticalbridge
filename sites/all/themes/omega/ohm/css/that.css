@@ -1647,6 +1647,19 @@ a.sublogo{
     color:#293f6a;
     margin-top:25px;
 }
+.event-location{
+    color:#78ab35 !important;
+    font-weight: 600;
+    margin-bottom:18px;
+    display: block;
+}
+.event-reserve{
+    background-color: #8bc540;
+    padding:6px 10px;
+    color:#fff !important;
+    width:168px;
+    text-align: center;
+}
 .news .views-field:first-child{
     color:#78ab35;
     font-weight: 600;
