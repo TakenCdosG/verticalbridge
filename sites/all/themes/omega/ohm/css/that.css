@@ -1628,7 +1628,61 @@ body{
 .ui-state-default .ui-icon{
     background: url("../images/plus.png") no-repeat center;
 }
+.news *{
+    font-family: 'Open Sans', sans-serif !important;
+}
+.news{
+    border-bottom: 1px solid #8bc540;
+    padding:0 30px 30px 30px;
+    margin-bottom: 30px !important;
+}
+.news:last-child{
+    border-bottom: none;
+}
+.news h5 a{
+    font-weight: 800;
+    color: #58595b !important;
+    font-size: 22px;
+}
+.news .views-field:last-child a{
+    text-transform: uppercase;
+    display: block !important;
+    color:#293f6a;
+    margin-top:25px;
+}
+.news .views-field:first-child{
+    color:#78ab35;
+    font-weight: 600;
+}
+.pager *{
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+}
 
+.pager__item--previous a, .pager__item--next a{
+    color:#78ab35 !important;
+    font-size: 20px;
+}
+.pager__item--last, .pager__item--first{
+    display: none;
+}
+.pager__item a{
+    color:#282828;
+    padding:0 6px;
+}
+.pager__item, .pager__item a{
+    border:none !important;
+    float:none;
+}
+.pager__item a:hover{
+    background-color: transparent;
+    color:#293f6a;
+}
+.pager__item--current{
+    color:#78ab35 !important;
+    text-decoration: underline;
+}
 /*footer*/
 .lower-footer{
     background: none;
