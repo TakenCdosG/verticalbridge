@@ -28,7 +28,9 @@ if(typeof(CKEDITOR) !== 'undefined') {
              */
 
 
-            { name : 'Call Action Button'		, element : 'span', styles : { 'color' : 'Red' } },
+            { name : 'Call to Action Title'		, element : 'span', attributes : { 'class' : 'call_title' } },
+            { name : 'Call to Action Description'		, element : 'span', attributes : { 'class' : 'call_desc' } },
+            { name : 'Call to Action Button'		, element : 'span', attributes : { 'class' : 'call_btn' } },
 
             /* Inline Styles */
 

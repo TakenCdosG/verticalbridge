@@ -28,7 +28,7 @@ jQuery(document).ready(function($){
 	});
 
 
-
+	//custom
 	$('.ui-accordion-content').each(function () {
 		$(this).css('cssText', 'height: initial !important;');
 		$(this).css('cssText', 'display: none;');
@@ -38,6 +38,13 @@ jQuery(document).ready(function($){
 		$(this).css('cssText', 'display: block;');
 
 	});
+	var pTags = $( ".call_btn, .call_desc, .call_title" );
+
+		if ( pTags.parent().is( "p" ) ) {
+
+			pTags.unwrap();
+		}
+
 
 
 });

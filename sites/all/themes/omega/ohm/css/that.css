@@ -1693,6 +1693,44 @@ a.sublogo{
     color:#78ab35 !important;
     text-decoration: underline;
 }
+.callto_holder{
+    background-color: #58595b;
+    color:#FFFFFF !important;
+    display: block;
+    position: relative;
+    min-height: 100px;
+    padding:32px 42px;
+    margin-top: 40px;
+}
+.call_title, .call_desc{
+    display:block !important;
+    padding-right: 232px;
+}
+.call_title{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.call_desc{
+    font-size: 18px;
+}
+.call_btn{
+    background-color: #8bc540;
+    padding:5px 10px;
+    font-size: 22px;
+    color: #ffffff;
+    position:absolute;
+    top:38%;
+    right:32px;
+}
+.call_btn a{
+    color: #ffffff;
+    font-weight: 600;
+}
+.callto_holder:after{
+    content: '';
+    clear:both;
+    display: block;
+}
 /*footer*/
 .lower-footer{
     background: none;
@@ -1729,8 +1767,19 @@ a.sublogo{
 }
 /*media queries*/
 @media screen and (max-width:1024px){
-.internal-page{
-    padding:35px 25px;
+    .internal-page{
+        padding:35px 25px;
+    }
 }
-
+@media screen and (max-width:767px){
+    .call_btn{
+        position: initial;
+        top:0;
+        float: left;
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+    .call_title, .call_desc{
+        padding:0;
+    }
 }
