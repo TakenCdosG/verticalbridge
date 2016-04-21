@@ -27,11 +27,6 @@ if(typeof(CKEDITOR) !== 'undefined') {
              { name : 'Address'			, element : 'address' },
              */
 
-
-            { name : 'Call to Action Title'		, element : 'span', attributes : { 'class' : 'call_title' } },
-            { name : 'Call to Action Description'		, element : 'span', attributes : { 'class' : 'call_desc' } },
-            { name : 'Call to Action Button'		, element : 'span', attributes : { 'class' : 'call_btn' } },
-
             /* Inline Styles */
 
             // These are core styles available as toolbar buttons. You may opt enabling
@@ -65,6 +60,11 @@ if(typeof(CKEDITOR) !== 'undefined') {
 
             { name : 'Language: RTL'	, element : 'span', attributes : { 'dir' : 'rtl' } },
             { name : 'Language: LTR'	, element : 'span', attributes : { 'dir' : 'ltr' } },
+
+            { name : 'Standard Button'		, element : 'span', attributes : { 'class' : 'button standard' } },
+            { name : 'Call to Action Title'		, element : 'span', attributes : { 'class' : 'call_title' } },
+            { name : 'Call to Action Description'		, element : 'span', attributes : { 'class' : 'call_desc' } },
+            { name : 'Call to Action Button'		, element : 'span', attributes : { 'class' : 'call_btn' } },
 
             /* Object Styles */
 

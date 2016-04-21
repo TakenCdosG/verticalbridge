@@ -1647,7 +1647,7 @@ a.sublogo{
     color:#293f6a;
     margin-top:25px;
 }
-.event-location{
+.views-field-field-event-location{
     color:#78ab35 !important;
     font-weight: 600;
     margin-bottom:18px;
@@ -1657,7 +1657,7 @@ a.sublogo{
     background-color: #8bc540;
     padding:6px 10px;
     color:#fff !important;
-    width:168px;
+    width:175px;
     text-align: center;
 }
 .news .views-field:first-child{
@@ -1731,7 +1731,28 @@ a.sublogo{
     clear:both;
     display: block;
 }
-/*footer*/
+.career_webform{
+    float: left;
+    width:67%;
+    margin-right:3%;
+}
+.career_link{
+    float: left;
+    width:30%;
+}
+.button.standard{
+    padding-top:8px !important;
+    padding-bottom: 8px !important;
+    background-color: #8bc540;
+    height:auto !important;
+}
+.button.standard a{
+    color: #ffffff !important;
+}
+.button.standard + .button.standard{
+    margin-left:40px
+}
+    /*footer*/
 .lower-footer{
     background: none;
     padding:0 0 37px 0;
@@ -1781,5 +1802,9 @@ a.sublogo{
     }
     .call_title, .call_desc{
         padding:0;
+    }
+    .career_webform, .career_link{
+        width:100%;
+        margin-bottom:10px;
     }
 }
