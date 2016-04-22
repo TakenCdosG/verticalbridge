@@ -1752,6 +1752,18 @@ a.sublogo{
 .button.standard + .button.standard{
     margin-left:40px
 }
+.page-node-15392 .field__item, .page-node-15393 .field__item{
+    display: inline-block !important;
+    margin:10px !important;
+
+}
+.field--name-field-logos{
+    text-align: center;
+}
+.page-node-15392 .field__items img, .page-node-15393 .field__items img{
+    height: auto;
+    width:180px;
+}
     /*footer*/
 .lower-footer{
     background: none;

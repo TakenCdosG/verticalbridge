@@ -28,6 +28,10 @@ if(typeof(CKEDITOR) !== 'undefined') {
              */
 
             /* Inline Styles */
+            { name : 'Standard Button'		, element : 'span', attributes : { 'class' : 'button standard' } },
+            { name : 'Call to Action Title'		, element : 'span', attributes : { 'class' : 'call_title' } },
+            { name : 'Call to Action Description'		, element : 'span', attributes : { 'class' : 'call_desc' } },
+            { name : 'Call to Action Button'		, element : 'span', attributes : { 'class' : 'call_btn' } },
 
             // These are core styles available as toolbar buttons. You may opt enabling
             // some of them in the "Styles" drop-down list, removing them from the toolbar.
@@ -61,10 +65,7 @@ if(typeof(CKEDITOR) !== 'undefined') {
             { name : 'Language: RTL'	, element : 'span', attributes : { 'dir' : 'rtl' } },
             { name : 'Language: LTR'	, element : 'span', attributes : { 'dir' : 'ltr' } },
 
-            { name : 'Standard Button'		, element : 'span', attributes : { 'class' : 'button standard' } },
-            { name : 'Call to Action Title'		, element : 'span', attributes : { 'class' : 'call_title' } },
-            { name : 'Call to Action Description'		, element : 'span', attributes : { 'class' : 'call_desc' } },
-            { name : 'Call to Action Button'		, element : 'span', attributes : { 'class' : 'call_btn' } },
+
 
             /* Object Styles */
 
