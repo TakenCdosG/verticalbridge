@@ -80,7 +80,7 @@
 
   <div class="l-main">
 	<!-- <div class="l-above-content" role="main">
-		<?php// print render($page['above_content']); ?>
+		
 	</div> -->
 	<div class="internal-header">
         <h3 class="page-title"><?php print $title; ?></h3>
