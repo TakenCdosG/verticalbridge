@@ -373,7 +373,7 @@ a {
 }
 
 a:visited,a:link {
-    color: #5a891f;
+    color: #8bc540;
 }
 
 a:hover,a:active {
@@ -1707,26 +1707,26 @@ a.sublogo{
     padding-right: 232px;
 }
 .call_title{
-    font-size: 28px;
+    font-size: 23px;
     margin-bottom: 10px;
 }
 .call_desc{
-    font-size: 18px;
+    font-size: 16px;
 }
 .call_btn{
     background-color: #8bc540;
     padding:5px 10px;
-    font-size: 22px;
+    font-size: 20px;
     color: #ffffff;
     position:absolute;
     top:38%;
-    right:32px;
+    right:45px;
 }
 .call_btn a{
     color: #ffffff;
     font-weight: 600;
 }
-.callto_holder:after{
+#block-block-4:after, #block-block-5:after, #block-block-6:after{
     content: '';
     clear:both;
     display: block;
@@ -1763,6 +1763,20 @@ a.sublogo{
 .page-node-15392 .field__items img, .page-node-15393 .field__items img{
     height: auto;
     width:180px;
+}
+.wwd{
+    width:30%;
+    text-align: center;
+    float:left;
+}
+.wwd:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.wwd img{
+    display: block;
+    margin:0 auto;
 }
     /*footer*/
 .lower-footer{

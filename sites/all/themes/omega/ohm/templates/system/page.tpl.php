@@ -106,7 +106,6 @@
   </div>
 
   <footer class="l-footer" role="contentinfo">
-		<br />
 		<?php print render($page['footer']); ?>
 		<div class="lower-footer">
 			&copy; <?php echo date('Y'); ?> Vertical Bridge, LLC. All rights reserved | <a href="/terms-of-use">Terms of Use</a>
