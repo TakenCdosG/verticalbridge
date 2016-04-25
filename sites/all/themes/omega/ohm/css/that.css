@@ -335,7 +335,7 @@ body ul {
 
 body h1,body h2,body h3,body h4,body h5,body h6 {
     text-transform: none;
-    font-family: Oswald,serif;
+    /*font-family: Oswald,serif;*/
     font-weight: 400;
 }
 
@@ -1585,7 +1585,7 @@ a.sublogo{
     left:30px;
     font-size: 2.3rem;
     font-family: 'Open Sans', sans-serif !important;
-    font-weight: 800;
+    font-weight: 700;
 }
 /*internal page*/
 .internal-page{
@@ -1637,7 +1637,7 @@ a.sublogo{
     border-bottom: none;
 }
 .news h5 a{
-    font-weight: 800;
+    font-weight: 700;
     color: #58595b !important;
     font-size: 22px;
 }
@@ -1759,6 +1759,8 @@ a.sublogo{
 }
 .field--name-field-logos{
     text-align: center;
+    border-top:1px solid #dedede;
+    padding-top:2em;
 }
 .page-node-15392 .field__items img, .page-node-15393 .field__items img{
     height: auto;
