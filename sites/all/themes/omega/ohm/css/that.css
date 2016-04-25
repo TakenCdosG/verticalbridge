@@ -1759,8 +1759,14 @@ a.sublogo{
 }
 .field--name-field-logos{
     text-align: center;
+}
+.page-node-15393 .field--name-field-logos{
     border-top:1px solid #dedede;
     padding-top:2em;
+}
+.page-node-15392 .field--name-field-logos{
+    border-bottom:1px solid #dedede;
+    padding-bottom:2em;
 }
 .page-node-15392 .field__items img, .page-node-15393 .field__items img{
     height: auto;
