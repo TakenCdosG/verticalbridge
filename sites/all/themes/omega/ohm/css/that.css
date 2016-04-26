@@ -1693,7 +1693,7 @@ a.sublogo{
     color:#78ab35 !important;
     text-decoration: underline;
 }
-#block-block-4, #block-block-5, #block-block-6, #block-block-7, #block-block-8{
+.call_to_action_block{
     background-color: #58595b;
     color:#FFFFFF !important;
     display: block;
@@ -1726,7 +1726,7 @@ a.sublogo{
     color: #ffffff;
     font-weight: 600;
 }
-#block-block-4:after, #block-block-5:after, #block-block-6:after{
+.call_to_action_block:after{
     content: '';
     clear:both;
     display: block;
