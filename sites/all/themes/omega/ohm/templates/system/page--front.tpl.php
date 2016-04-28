@@ -78,58 +78,68 @@
 		<a href="javascript:;" class="mobile-menu-btn center hidden">&equiv; Menu</a>
 		<?php print render($page['navigation']); ?>
 	</header>
-	
-	<div class="home-news">
-		<?php print render($page['news']); ?>
-	</div>
-	
-	<div class="l-main">
-	
-		<div class="l-above-content" role="main">
-			<?php print render($page['above_content']); ?>
-		</div>
-		<div class="l-content home-slider-area" role="main">
-			<a id="main-content"></a>
-			<?php print render($page['content']); ?>
-		</div>
-	</div>
-	
 	<div class="home-site-locator">
 		<div class="a">
-			<h3>Site Locator <span class="f14px font2" style="font-weight:normal;">Vertical Bridge delivers sites to carriers fast.</span></h3>
-			<a href="http://sitelocator.verticalbridge.com" class="italic f14px">Advanced Locator</a>
+			<h3>Site Locator <br><span class="f14px font2" style="font-weight:normal;">Vertical Bridge delivers sites to carriers fast.</span></h3>
+
 		</div>
 		<div class="b">
-			<form action="http://sitelocator.verticalbridge.com/Home/Index" method="GET" id="home-site-locator">        
-				<input type="text" id="search-field" class="b-a center" name="Search" placeholder="Enter City, County, State, Zip or Coordinates" style="width:70%;padding:14px">
-				<input type="submit" id="site-locator-btn" class="b-c" value="Locate" style="background:#8bc540;color:white;padding:14px;border:2px solid #8bc540;width:28%;" />
+			<form action="http://sitelocator.verticalbridge.com/Home/Index" method="GET" id="home-site-locator">
+				<input type="text" id="search-field" class="b-a center loc-btn" name="Search" placeholder="Enter City, County, State, Zip or Coordinates" style="width:73%;padding:14px;">
+				<input type="submit" id="site-locator-btn" class="b-c loc-fld" value="Locate" style="background:#8bc540;color:white;padding:14px;border:2px solid #8bc540;width:22%;" />
 				<input type="hidden" name="searchtype" value="basic" />
 			</form>
 		</div>
-	</div>
-	
-	<div class="home-bottom-heroes">
-		<div class="a">
-			<h3>Leasing Space</h3>
-			<p>Leasing space should be straight-forward and easy. 
-			See how simple this process can be by applying for space using our short collocation application.<br />
-			<a href="/senior-management/leasing-managers">Or contact your Leasing/Site Manager</a></p>
-			<p class="center">
-				<a href="/site-solutions/collocation-application" style="text-decoration:none;background:#8bc540;color:white;padding:14px 15px;display:inline-block;font-size:1rem;width:80%;">Apply Now</a>
-			</p>
+	</div>	
+	<div class="l-main">
+		<!--<div class="l-above-content" role="main">
+			<?php //print render($page['above_content']); ?>
+		</div> -->
+
+		<div class="l-content home-slider-area" role="main">
+			<a id="main-content"></a>
+			<?php print render($page['content']['views_home_slider-block']); ?>
 		</div>
-		<div class="b">
-			<h3>Building Relationships</h3>
-			<p>Relationships are important to Vertical Bridge. 
-			Long-term and solid relationships are built when you remain open and flexible.<br /><br />
-			<a href="/property-owners">Property Owners</a><br />
-			<a href="/site-solutions">Site Solutions</a><br />
-			<a href="/senior-management">Team VB</a></p>
+		<div class="internal-page notop">
+			<div class="newscontainer">
+				<div class="home-news-title">News</div>
+				<div class="home-news">
+					<?php print render($page['news']); ?>
+				</div>
+				
+				<div class="home-news-controller end"></div>
+				<div class="home-news-controller middle"></div>
+				<div class="home-news-controller begin"></div>
+			</div>
+			<div class="services">
+				<?php
+				dpm($node);
+				
+				foreach($node->field_service_title['und'] as $key => $value){
+				?>
+				<div class="service">
+					<div class="service-image">
+						<?php 
+							$url = file_create_url($node->field_service_image['und'][$key]['uri']);
+						?>
+						<img src="<?php print $url ?>"/>
+						<h2><?php print $value['value'];?></h2>
+					</div>
+
+					<div class="service-description">
+						<?php print $node->field_service_description['und'][$key]['value'];?>
+					</div>
+				</div>
+				<?php
+				} ?>
+			</div>
+
 		</div>
 	</div>
 
 
 
+	<div style="clear: both"></div>
 	<footer class="l-footer" role="contentinfo">
 		<br />
 		<?php print render($page['footer']); ?>
