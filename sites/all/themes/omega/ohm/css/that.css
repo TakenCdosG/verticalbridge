@@ -1829,6 +1829,12 @@ a:focus{
     top: 0;
     background-color: #ffffff;
 }
+.node-type-basic-page-with-tabs .ui-tabs-nav li{
+    padding:0 !important;
+} 
+.node-type-basic-page-with-tabs .ui-tabs-nav li a{
+    padding:13px 40px 13px 20px !important;
+} 
 .node-type-basic-page-with-tabs .ui-tabs-vertical .ui-tabs-panel { padding: 2em 2em; float: left; width: 75%;}
 
 .node-type-basic-page-with-tabs  .ui-tabs-panel{
