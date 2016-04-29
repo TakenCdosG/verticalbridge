@@ -112,9 +112,7 @@
 				<div class="home-news-controller begin"></div>
 			</div>
 			<div class="services">
-				<?php
-				dpm($node);
-				
+				<?php				
 				foreach($node->field_service_title['und'] as $key => $value){
 				?>
 				<div class="service">
