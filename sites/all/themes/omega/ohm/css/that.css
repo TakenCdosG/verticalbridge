@@ -1872,6 +1872,7 @@ a:focus{
     display:table-cell;
     vertical-align:middle;
     padding-left:10px;
+    color:#58595b !important;
 }
 .service-description{
     margin-top: 30px;
