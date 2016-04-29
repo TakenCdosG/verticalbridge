@@ -131,7 +131,8 @@
 				<?php
 				} ?>
 			</div>
-
+		<?php
+		print render($page['home_blocks']); ?>
 		</div>
 	</div>
 

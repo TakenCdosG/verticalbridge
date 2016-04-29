@@ -26,6 +26,7 @@ regions[help]           = Help
 regions[above_content]  = Above Content
 regions[subnav]			= Sub Navigation
 regions[content]        = Content
+regions[home_blocks]    = Home Block
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
 regions[footer]         = Footer
