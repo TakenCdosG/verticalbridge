@@ -137,7 +137,7 @@
           for($i = 0; $i < $keyCount; $i++){
           ?>
               <div id="tabs-<?php echo $i+1 ?>">
-                  <p><?php print render($content['field_tab_content'][$i]);?></p>
+                  <p><?php print render($content['field_tab_content_wysiwyg'][$i]);?></p>
               </div>
           <?php
           } ?>
