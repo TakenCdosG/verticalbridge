@@ -1998,6 +1998,12 @@ a:focus{
     float: left;
     margin-right: 7px !important;
 }
+.section-about-us ul li{
+    margin-left:1.5em;
+}
+
+
+
 /*footer*/
 .lower-footer{
     background: none;
