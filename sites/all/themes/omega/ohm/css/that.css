@@ -1742,6 +1742,10 @@ a.sublogo{
     float: left;
     width:30%;
 }
+.node-type-careers .button{
+    display: block;
+    margin: 10px 0 5px 0;
+}
 .button.standard{
     padding-top:8px !important;
     padding-bottom: 8px !important;
