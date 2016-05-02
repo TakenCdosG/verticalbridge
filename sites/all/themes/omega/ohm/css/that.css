@@ -1742,9 +1742,8 @@ a.sublogo{
     float: left;
     width:30%;
 }
-.node-type-careers .button{
-    display: block;
-    margin: 10px 0 5px 0;
+.node-type-careers .form-managed-file *{
+    vertical-align: top;
 }
 .button.standard{
     padding-top:8px !important;
