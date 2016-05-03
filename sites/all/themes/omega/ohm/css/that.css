@@ -1,7 +1,7 @@
 ﻿/*custom font*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800);
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800);*/
 
-@font-face {
+/*@font-face {
     font-family: 'Oswald';
     font-weight: 300;
     src: local('☺'), url(http://themes.googleusercontent.com/static/fonts/oswald/v7/HqHm7BVC_nzzTui2lzQTDT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
@@ -18,19 +18,19 @@
     font-weight: 700;
     src: local('☺'), url(http://themes.googleusercontent.com/static/fonts/oswald/v7/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
-
+*/
 .center {
     text-align: center;
 }
-
+ /*
 .font1 {
-    font-family: Oswald,serif;
+   font-family: Oswald,serif;
 }
 
 .font2 {
     font-family: Arial,serif;
 }
-
+*/
 .f12px {
     font-size: .75rem;
 }
@@ -521,7 +521,7 @@ ul.quicktabs-tabs li.active a {
 
 ul.quicktabs-tabs li a {
     font-size: 1.5rem;
-    font-family: Oswald,serif;
+    /*font-family: Oswald,serif;*/
     color: #8bc540;
     display: block;
     border-bottom: 3px solid transparent;
@@ -703,7 +703,7 @@ body.section-site-locator .advanced-slideout.slideout-list {
     font-size: 14px;
     color: #333;
     display: inline-block;
-    font-family: "Oswald", sans-serif;
+    /*font-family: "Oswald", sans-serif;*/
     padding: 8px 14px;
 }
 .as-filter-results > ul li a.active,
@@ -738,7 +738,7 @@ a.filter-button {
     background: #333;
     width: 100%;
     text-align: center;
-	font-family: Oswald, Serif;
+	/*font-family: Oswald, Serif;*/
     font-size: 17px;
     color: #fff;
     text-shadow: 0 1px 1px rgba(0,0,0,0.25);
@@ -942,7 +942,7 @@ body.section-site-locator .l-page {
     display: none;
     font-size: 1rem;
     padding: 15px;
-    font-family: Oswald,serif;
+    /*font-family: Oswald,serif;*/
 }
 body.section-my-applications .internal-page {
     padding: 0;
@@ -1108,7 +1108,7 @@ a.back-button {
 .ad-header li a {
     display: inline-block;
     font-size: 1rem;
-    font-family: "Oswald", sans-serif;
+    /*font-family: "Oswald", sans-serif;*/
     color: #fff;
     border-right: 2px solid #727272;
     padding: 0 24px;
@@ -1166,7 +1166,7 @@ a.back-button {
 .application-submenu {
     background: #dadada;
     width: 100%;
-    font-family: "Oswald", sans-serif;
+    /*font-family: "Oswald", sans-serif;*/
     margin: 0 0 16px;
 }
 .application-submenu ul {
@@ -1273,7 +1273,7 @@ a.back-button {
 
 .l-region--navigation .menu li a {
     text-transform: capitalize;
-    font-family: Oswald,serif;
+    /*font-family: Oswald,serif;*/
     border: 0;
     color: #fff;
     font-size: 1rem;
@@ -1401,7 +1401,7 @@ a.back-button {
 
 .l-region--subnav .menu li a {
     font-size: .85rem;
-    font-family: Oswald,serif;
+    /*font-family: Oswald,serif;*/
     color: #59595c;
     display: block;
     padding: 15px;
