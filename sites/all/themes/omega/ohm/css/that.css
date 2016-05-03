@@ -2009,7 +2009,9 @@ a:focus{
 #mc_embed_signup .mc-field-group.input-group ul li{
     margin-left: 0 !important;
 }
-
+#mc_embed_signup .mc-field-group.input-group label{
+    margin-left:4px;
+}
 
 /*footer*/
 .lower-footer{
