@@ -1598,6 +1598,9 @@ a.sublogo{
     border:none;
     background-image: none;
 }
+.ui-widget-content{
+    color:#545454 !important;
+}
 .ui-accordion  .ui-widget-content{
     padding:0!important;
 }
