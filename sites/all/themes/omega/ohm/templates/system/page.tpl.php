@@ -83,7 +83,33 @@
 
 	</div> -->
 	<div class="internal-header">
-        <h3 class="page-title"><?php print $title; ?></h3>
+    <?php 
+    
+    if (isset($node)) {
+      $type_node = $node->type;
+    }else{
+      $type_node = "";
+    }
+
+    switch ($type_node) {
+    case 'press_release':
+        echo '<h3 class="page-title">News</h3>';
+        $no_type = false;
+        break;
+    case 'events':
+        echo '<h3 class="page-title">Events</h3>';
+        $no_type = false;
+        break;
+    case 'press':
+        echo '<h3 class="page-title">Press</h3>';
+        $no_type = false;
+        break;
+    default:
+        echo '<h3 class="page-title">'.$title.'</h3>';
+        $no_type = true;
+    }
+     ?>
+        
 	</div>
     <div class="l-content internal-page" role="main">
       <?php print render($page['highlighted']); ?>
@@ -97,6 +123,7 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+      <?php if($no_type == true){}else{print('<h3>'.$title.'</h3>');}?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
