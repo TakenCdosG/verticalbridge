@@ -144,7 +144,7 @@
           } ?>
 
       </div>
-      
+      <?php print render($content['field_logos']);?>
 	<?php if (!empty($sitemap)) { ?>
 		<?php foreach ($sitemap as $type => $entries) { ?>
 			<h3><?php echo $type; ?></h3>
