@@ -1757,7 +1757,7 @@ a.sublogo{
 .button.standard + .button.standard{
     margin-left:40px
 }
-.page-node-15392 .field__item, .page-node-15393 .field__item{
+.page-node-15392 .field__item, .node-type-basic-page-with-tabs .field__item{
     display: inline-block !important;
     margin:10px !important;
 
@@ -1765,7 +1765,7 @@ a.sublogo{
 .field--name-field-logos{
     text-align: center;
 }
-.page-node-15393 .field--name-field-logos{
+.node-type-basic-page-with-tabs .field--name-field-logos{
     border-top:1px solid #dedede;
     padding-top:2em;
 }
@@ -1773,7 +1773,7 @@ a.sublogo{
     border-bottom:1px solid #dedede;
     padding-bottom:2em;
 }
-.page-node-15392 .field__items img, .page-node-15393 .field__items img{
+.page-node-15392 .field__items img, .node-type-basic-page-with-tabs .field__items img{
     height: auto;
     width:180px;
 }
