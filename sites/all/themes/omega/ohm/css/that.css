@@ -2022,6 +2022,7 @@ a:focus{
 }
 .contact-name, .contact-email{
     margin-top:20px;
+    line-height: 2.5 !important;
 }
 
 
