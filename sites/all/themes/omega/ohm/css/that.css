@@ -2012,6 +2012,18 @@ a:focus{
 #mc_embed_signup .mc-field-group.input-group label{
     margin-left:4px;
 }
+.contact-name{
+    width:49% !important;
+    margin-right:2% !important;
+    float:left !important;
+}
+.contact-email{
+    width: 49% !important;
+}
+.contact-name, .contact-email{
+    margin-top:20px;
+}
+
 
 /*footer*/
 .lower-footer{
@@ -2054,6 +2066,10 @@ a:focus{
     }
 }
 @media screen and (max-width:767px){
+    .contact-name, .contact-email{
+    width: 100% !important;
+    margin-right:0;
+}
     .node-type-basic-page-with-tabs .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:after{
         display: none;
     }
