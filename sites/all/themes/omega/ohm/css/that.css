@@ -2003,7 +2003,7 @@ a:focus{
     float: left;
     margin-right: 7px !important;
 }
-ul li{
+.node__content ul li{
     margin-left:1.5em !important;
 }
 

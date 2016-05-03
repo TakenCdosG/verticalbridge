@@ -78,7 +78,6 @@
  * @see template_process()
  */
 ?>
-
 <article<?php print $attributes; ?>>
   <?php if (!empty($title_prefix) || !empty($title_suffix) || !$page): ?>
     <header>
@@ -112,6 +111,8 @@
           $(function() {
               $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
               $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+              var heightab = $('.ui-tabs-nav').height()-2;
+              $('.ui-tabs-panel').css('min-height',heightab);
           });
           } ) ( jQuery );
       </script>
