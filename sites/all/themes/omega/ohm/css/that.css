@@ -2024,7 +2024,10 @@ a:focus{
     margin-top:20px;
     line-height: 2.5 !important;
 }
-
+.contact_webform .button{
+    height: 3.2em !important;
+    padding:0 2em !important;
+}
 
 /*footer*/
 .lower-footer{
