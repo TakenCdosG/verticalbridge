@@ -1807,6 +1807,7 @@ a:focus{
     color:#7cb138 !important;
 }
 .node-type-basic-page-with-tabs .ui-state-default{
+    margin-left:0 !important;
     border:none;
     background-color: #dedede;
     padding:13px 40px 13px 20px !important;

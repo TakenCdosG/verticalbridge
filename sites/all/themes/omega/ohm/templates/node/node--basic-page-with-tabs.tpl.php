@@ -143,7 +143,11 @@
           } ?>
 
       </div>
-
+      <div>
+        <?phpif(!empty($content['field_logos'])){
+          print render($content['field_logos']);
+        } ?>
+      </div>
 	<?php if (!empty($sitemap)) { ?>
 		<?php foreach ($sitemap as $type => $entries) { ?>
 			<h3><?php echo $type; ?></h3>
