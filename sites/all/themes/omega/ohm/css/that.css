@@ -2006,7 +2006,9 @@ a:focus{
 .node__content ul li{
     margin-left:1.5em !important;
 }
-
+#mc_embed_signup .mc-field-group.input-group ul li{
+    margin-left: 0 !important;
+}
 
 
 /*footer*/
