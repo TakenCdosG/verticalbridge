@@ -145,7 +145,7 @@
 
       </div>
       <div style="clear:both"></div>
-      <div style="width:100%; margin-top:50px;">
+      <div style="width:100%; margin-top:30px;">
         <?php print render($content['field_logos']);?>
       </div>    
 	<?php if (!empty($sitemap)) { ?>
