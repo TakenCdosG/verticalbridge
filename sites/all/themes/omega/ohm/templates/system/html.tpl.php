@@ -111,6 +111,17 @@
           $('.news-list.news-'+number).replaceTag('<div>', true);
           $('.home-news, .news-list').css('width',$('.newscontainer').width()- con);
         }
+        function marquee_mobile() {
+          if($(window).width()<788){
+            changetag();
+          }else{
+            stop();
+          }
+        }
+        marquee_mobile();
+        $( window ).resize(function() {
+          marquee_mobile();
+        });
         $('.news-list.news-0').css("display", "block");
         var total_news = $('.view-content .news-list').length;
         $('.home-news-controller.end').click(function() {
@@ -136,8 +147,6 @@
           }else{
             $('.news-list').mouseenter();
           }
-
-
           $("marquee").hover(function () {
             this.stop();
             playstatus =0;
