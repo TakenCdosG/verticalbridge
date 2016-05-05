@@ -1279,6 +1279,7 @@ a.back-button {
     color: #fff;
     font-size: 1rem;
     text-shadow: 1px 1px 2px #000;
+    height: 96px;
 }
 
 .l-region--navigation .menu li a:hover {
@@ -1286,6 +1287,14 @@ a.back-button {
     background: #8bc540;
 }
 
+.l-region--navigation .menu li ul li a {
+    color: #000000;
+    height: 38px;
+}
+.l-region--navigation .menu li ul{
+    border: 1px solid #58595B;
+    border-top:none;
+}
 .l-region--navigation .menu li:hover {
     background: #8bc540;
 }
@@ -1320,16 +1329,14 @@ a.back-button {
     display: none;
     z-index: 10;
     position: absolute;
-    right: 0;
-    background: #59595c;
+    right: -1px;
+    background: #FFFFFF;
     text-align: left;
     width: 150px;
-    border-top: 1px solid #8bc540;
 }
 
 .l-region--navigation .menu li .menu li {
     display: block;
-    border-top: 1px solid #333;
 }
 
 .l-region--navigation .menu li .menu li:first-child {
@@ -1548,7 +1555,6 @@ body{
 /*header*/
 .l-header{
     background: #59595c;
-    overflow: hidden;
     margin-top:12px;
 }
 a.sublogo{
@@ -1566,14 +1572,11 @@ a.sublogo{
 .block--nav-bar a {
     padding:2.33em 0.86em;
     font-family: 'Open Sans', sans-serif !important;
-    font-weight: 600;
 }
 .l-region--navigation .menu li a{
     text-shadow:none;
 }
-.l-region--navigation .menu{
-    float: left;
-}
+
 .mobile-menu-btn{
     padding:36px;
 }
