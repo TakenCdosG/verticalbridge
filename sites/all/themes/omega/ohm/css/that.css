@@ -1556,6 +1556,7 @@ body{
 .l-header{
     background: #59595c;
     margin-top:12px;
+    height: 96px;
 }
 a.sublogo{
     width:244px;
