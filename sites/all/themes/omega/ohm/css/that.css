@@ -2089,6 +2089,11 @@ a:focus{
         padding:35px 25px;
     }
 }
+@media screen and (max-width:789px){
+    .home-news-controller{
+        display: none !important;
+    }
+}
 @media screen and (max-width:767px){
     .contact-name, .contact-email{
     width: 100% !important;
@@ -2099,9 +2104,6 @@ a:focus{
     }
     #block-views-home-slider-block h1{
         font-size: 1.8em;
-    }
-    .home-news-controller{
-        display: none !important;
     }
     .services .service{
         width:100%;
