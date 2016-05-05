@@ -104,12 +104,14 @@
 			<div class="newscontainer">
 				<div class="home-news-title">News</div>
 				<div class="home-news">
-					<?php print render($page['news']); ?>
+						<?php print($page['news']['views_news_marquee-block']['#markup']); ?>
 				</div>
-				
-				<div class="home-news-controller end"></div>
-				<div class="home-news-controller middle"></div>
-				<div class="home-news-controller begin"></div>
+				<div class="controller-holder">
+					<div class="home-news-controller end"></div>
+					<div class="home-news-controller middle"></div>
+					<div class="home-news-controller begin"></div>
+					<div style="clear:both;"></div>
+				</div>
 			</div>
 			<div class="services">
 				<?php				

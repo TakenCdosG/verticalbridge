@@ -1891,7 +1891,6 @@ a:focus{
 .home-news{
     border: none;
     float:left;
-    width:70%;
     height: 1.5em;
     padding:0;
     margin-top:20px;
@@ -1919,6 +1918,7 @@ a:focus{
     color:#fff;
     padding:20px;
     height: 59px;
+    cursor: pointer;
 }
 .home-news-controller.begin{  
     background-color: #8aca3c;
@@ -1942,6 +1942,9 @@ a:focus{
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
+}
+.controller-holder{
+    float:right;
 }
 .home-site-locator{
     background-color: #dedede;
@@ -2035,7 +2038,14 @@ a:focus{
     height: 3.2em !important;
     padding:0 2em !important;
 }
+.home-news .view-id-news_marquee .news-list{
+    float:left;
+    margin-left:20px;
+    text-align: left;
+}
+.news-list{
 
+}
 /*footer*/
 .lower-footer{
     background: none;

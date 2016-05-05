@@ -53,6 +53,114 @@
   <?php print $scripts; ?>
   <script src="https://use.typekit.net/gwm5oem.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script>
+    /*News marquee script*/
+    ( function($) {
+      $.extend({
+        replaceTag: function (currentElem, newTagObj, keepProps) {
+          var $currentElem = $(currentElem);
+          var i, $newTag = $(newTagObj).clone();
+          if (keepProps) {//{{{
+            newTag = $newTag[0];
+            newTag.className = currentElem.className;
+            $.extend(newTag.classList, currentElem.classList);
+            $.extend(newTag.attributes, currentElem.attributes);
+          }//}}}
+          $currentElem.wrapAll($newTag);
+          $currentElem.contents().unwrap();
+          // return node; (Error spotted by Frank van Luijn)
+          return this; // Suggested by ColeLawrence
+        }
+      });
+
+      $.fn.extend({
+        replaceTag: function (newTagObj, keepProps) {
+          // "return" suggested by ColeLawrence
+          return this.each(function() {
+            jQuery.replaceTag(this, newTagObj, keepProps);
+          });
+        }
+      });
+
+      var number = 0;
+      var playstatus;
+      'use strict';
+      $(function() {
+        var con = 0;
+        if($(window).width()>767){
+          con = 220;
+        }else{
+          con = 100;
+        }
+        $('.home-news, .news-list').css('width',$('.newscontainer').width()- con);
+        var sum=0;
+        $('.home-news .view-id-news_marquee div').each( function(){ sum += $(this).width(); });
+        $('.view-id-news_marquee').width(sum);
+        $('.home-news .view-id-news_marquee div div').each(function (i) {
+          $(this).addClass('news-list news-' + i);
+        });
+        /*controller functions*/
+        function changetag() {
+          if($('.news-list.news-'+number).prop("tagName") == 'DIV'){
+            $('.news-list.news-'+number).replaceTag('<marquee>', true);
+            $('.home-news, .news-list').css('width',$('.newscontainer').width()- con);
+          }
+        }
+        function stop() {
+          $('.home-news-controller.middle').css("background-image","url(../sites/all/themes/omega/ohm/images/arrow-play.png)");
+          $('.news-list.news-'+number).replaceTag('<div>', true);
+          $('.home-news, .news-list').css('width',$('.newscontainer').width()- con);
+        }
+        $('.news-list.news-0').css("display", "block");
+        var total_news = $('.view-content .news-list').length;
+        $('.home-news-controller.end').click(function() {
+          stop();
+          $('.home-news, .news-list').css('width',$('.newscontainer').width()- con);
+          if(number<(total_news-1)){
+            $('.news-list.news-'+number).css("display", "none");
+            number+=1;
+          }
+        });
+        $('.home-news-controller.begin').click(function() {
+          stop();
+          if(number>0){
+            number-=1;
+          }
+          $('.news-list.news-'+number).css("display", "block");
+        });
+        $('.home-news-controller.middle').click(function() {
+          $('.home-news-controller.middle').css("background-image","url(../sites/all/themes/omega/ohm/images/arrow-pause.png)");
+          changetag();
+          if(playstatus==0){
+            $('.news-list').mouseleave();
+          }else{
+            $('.news-list').mouseenter();
+          }
+
+
+          $("marquee").hover(function () {
+            this.stop();
+            playstatus =0;
+            $('.home-news-controller.middle').css("background-image","url(../sites/all/themes/omega/ohm/images/arrow-play.png)");
+          }, function () {
+            this.start();
+            playstatus=1;
+            $('.home-news-controller.middle').css("background-image","url(../sites/all/themes/omega/ohm/images/arrow-pause.png)");
+
+          });
+        });
+      });
+      $( window ).resize(function() {
+        var con = 0;
+        if($(window).width()>767){
+          con = 220;
+        }else{
+          con = 100;
+        }
+        $('.home-news, .news-list').css('width',$('.newscontainer').width()-con);
+      });
+    } ) ( jQuery );
+  </script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
