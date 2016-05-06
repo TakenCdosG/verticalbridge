@@ -111,11 +111,11 @@
                   $('.zone-id').hover(
                       function(e) {
                           var texto = $(this).attr('id')+"-id";
-                          var textto = $('#'+texto).text();
+                          var textto = $('#'+texto).html();
                           $( this ).append( $( "<div class='tooltip'>"+textto+"</div>" ) );
                           $(this).css({position:"absolute", left:e.pageX,top:e.pageY});
                       }, function() {
-                          $( this ).find( "div:last" ).remove();
+                          $( this ).find( ".tooltip" ).remove();
                       }
                   );
               });
