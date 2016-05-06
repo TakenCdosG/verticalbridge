@@ -1881,6 +1881,8 @@ a:focus{
     width:50%;
     padding:15px 2.5%;
     float:left;
+    min-height: 205px;
+    
 }
 .service-image{
     text-align: center;
