@@ -1283,8 +1283,8 @@ a.back-button {
 }
 
 .l-region--navigation .menu li a:hover {
-    color: #fff;
-    background: #8bc540;
+   /* color: #fff;
+    background: #8bc540;*/
 }
 
 .l-region--navigation .menu li ul li a {
@@ -1296,7 +1296,7 @@ a.back-button {
     border-top:none;
 }
 .l-region--navigation .menu li:hover {
-    background: #8bc540;
+    /*background: #8bc540;*/
 }
 
 .l-region--navigation .menu li:hover .menu {
@@ -1311,7 +1311,7 @@ a.back-button {
 }
 
 .l-region--navigation .menu li.active-trail a {
-    background: #8bc540;
+    /*background: #8bc540;*/
 }
 
 .l-region--navigation .menu li.active-trail a .menu {
@@ -1333,6 +1333,7 @@ a.back-button {
     background: #FFFFFF;
     text-align: left;
     /*width: 150px;*/
+    padding: 5px;
 }
 
 .l-region--navigation .menu li .menu li {
