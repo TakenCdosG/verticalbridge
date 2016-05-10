@@ -92,7 +92,7 @@
   <div class="l-above-content" role="main">
     <?php print render($page['above_content']); ?>
   </div>
-  <div class="internal-header">
+  <div class="internal-header" style="background-image: url(<?php print file_create_url($node->field_internal_header['und'][0]['uri']); ?>)">
     <a href="<?php print $front_page; ?>" class="sublogo"><img src="/sites/default/files/slider-logo.png" alt="Vertical Bridge" /></a>
   </div>
   <?php print render($page['subnav']); ?>

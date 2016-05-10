@@ -597,7 +597,7 @@ td.active {
 }
 
 .internal-header {
-    background: url(../images/sub-header.jpg) no-repeat;
+    /*background: url(../images/sub-header.jpg) no-repeat;*/
     height: 242px;
 }
 
@@ -1562,6 +1562,7 @@ a.sublogo{
     width:244px;
     height: 76px;
     margin: 10px 35px;
+    float:left;
 }
 a.sublogo img{
     width: 244px;
@@ -1873,6 +1874,9 @@ a:focus{
     text-decoration: underline;
     color:#676767;
 }
+.map-data-description p:last-child{
+    margin-bottom:0;
+}
 .services:after, .map-data:after{
     content: "";
     clear: both;
@@ -1880,9 +1884,9 @@ a:focus{
 }
 .services .service, .map-data .map-data-detail{
     width:50%;
-    padding:15px 2.5%;
+    padding:10px 2.5%;
     float:left;
-    min-height: 220px;
+    min-height: 195px;
 
 }
 .service-image{
