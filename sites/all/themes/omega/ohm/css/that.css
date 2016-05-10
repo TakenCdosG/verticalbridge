@@ -1332,7 +1332,7 @@ a.back-button {
     right: -1px;
     background: #FFFFFF;
     text-align: left;
-    width: 150px;
+    /*width: 150px;*/
 }
 
 .l-region--navigation .menu li .menu li {
