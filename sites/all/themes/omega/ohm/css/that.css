@@ -1563,6 +1563,8 @@ a.sublogo{
     height: 76px;
     margin: 10px 35px;
     float:left;
+    position: relative;
+    z-index:100;
 }
 a.sublogo img{
     width: 244px;
