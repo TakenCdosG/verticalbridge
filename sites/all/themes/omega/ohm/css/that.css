@@ -1556,7 +1556,7 @@ body{
 .l-header{
     background: #59595c;
     margin-top:12px;
-    height: 96px;
+   
 }
 a.sublogo{
     width:244px;
@@ -1886,7 +1886,7 @@ a:focus{
     width:50%;
     padding:10px 2.5%;
     float:left;
-    min-height: 195px;
+    min-height: 205px;
 
 }
 .service-image{
