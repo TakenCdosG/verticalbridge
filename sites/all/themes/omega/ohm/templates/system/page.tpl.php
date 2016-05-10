@@ -82,7 +82,7 @@
 	<!-- <div class="l-above-content" role="main">
 
 	</div> -->
-	<div class="internal-header" style="background-image: url(<?php isset($node) ? print file_create_url($node->field_internal_header['und'][0]['uri']) : print path_to_theme().'/images/sub-header.jpg' ?>)">
+	<div class="internal-header" style="background-image: url(<?php isset($node) ? print file_create_url($node->field_internal_header['und'][0]['uri']) : print $base_path.'sites/all/themes/omega/ohm/images/sub-header.jpg' ?>)">
     <?php 
     if (isset($node)) {
       $type_node = $node->type;
