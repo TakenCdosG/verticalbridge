@@ -1893,7 +1893,7 @@ a:focus{
     width:50%;
     padding:10px 2.5%;
     float:left;
-    min-height: 205px;
+    /*min-height: 205px;*/
 
 }
 .service-image{
