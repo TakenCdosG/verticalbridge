@@ -1891,10 +1891,12 @@ a:focus{
 }
 .services .service, .map-data .map-data-detail{
     width:50%;
-    padding:10px 2.5%;
+    padding:15px 2.5%;
     float:left;
     /*min-height: 205px;*/
-
+}
+.map-data-description p:last-child{
+    margin-bottom:0;
 }
 .service-image{
     text-align: center;

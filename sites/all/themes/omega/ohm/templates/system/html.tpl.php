@@ -168,6 +168,19 @@
         }
         $('.home-news, .news-list').css('width',$('.newscontainer').width()-con);
       });
+      /*inner header*/
+      $(document).ready(function(){
+        var bpath = "<?php  echo !empty($base_path); ?>";
+        if($("body").hasClass("page-events")){
+          $('.internal-header').css("background-image","url(sites/all/themes/omega/ohm/images/events-bg.jpg)")
+        }
+        if($("body").hasClass("page-press")){
+          $('.internal-header').css("background-image","url(sites/all/themes/omega/ohm/images/press-bg.jpg)")
+        }
+        if($("body").hasClass("page-about-us-newsroom")){
+          $('.internal-header').css("background-image","url("+bpath+"/sites/all/themes/omega/ohm/images/news-bg-2.jpg)")
+        }
+      });
     } ) ( jQuery );
   </script>
 </head>
