@@ -1288,7 +1288,7 @@ a.back-button {
 }
 
 .l-region--navigation .menu li ul li a {
-    color: #000000;
+    color: #000000 !important;
     height: 38px;
 }
 .l-region--navigation .menu li ul{
@@ -1313,7 +1313,9 @@ a.back-button {
 /*.l-region--navigation .menu li.active-trail a {
     background: #8bc540;
 }*/
-
+li.expanded.active-trail a{
+    color:#8bc540 !important;
+}
 
 .l-region--navigation .menu li.active-trail a .menu {
     display: block;
