@@ -1314,9 +1314,6 @@ a.back-button {
     background: #8bc540;
 }*/
 
-li.expanded.active-trail {
-    background: #8bc540;
-}
 
 .l-region--navigation .menu li.active-trail a .menu {
     display: block;
