@@ -1897,19 +1897,22 @@ a:focus{
     margin-bottom:0;
 }
 .service-image{
-    text-align: center;
+    text-align: left;
     position: relative;
     display: table;
     margin:0 auto;
+    width:220px;
 }
 .service-image img{
     
 }
 .service h2{
     display: inline-block;
-    display:table-cell;
-    vertical-align:middle;
-    padding-left:10px;
+    /*display:table-cell;
+    vertical-align:middle;*/
+    position: absolute;
+    top:26%;
+    padding-left:20px;
     color:#58595b !important;
 }
 .service-description{
