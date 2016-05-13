@@ -100,19 +100,19 @@
 			<a id="main-content"></a>
 			<?php print render($page['content']['views_home_slider-block']); ?>
 		</div>
-		<div class="internal-page notop">
-			<div class="newscontainer">
-				<div class="home-news-title">News</div>
-				<div class="home-news">
-						<?php print($page['news']['views_news_marquee-block']['#markup']); ?>
-				</div>
-				<div class="controller-holder">
-					<div class="home-news-controller end"></div>
-					<div class="home-news-controller middle"></div>
-					<div class="home-news-controller begin"></div>
-					<div style="clear:both;"></div>
-				</div>
+		<div class="newscontainer">
+			<div class="home-news-title">News</div>
+			<div class="home-news">
+					<?php print($page['news']['views_news_marquee-block']['#markup']); ?>
 			</div>
+			<div class="controller-holder">
+				<div class="home-news-controller end"></div>
+				<div class="home-news-controller middle"></div>
+				<div class="home-news-controller begin"></div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div class="internal-page notop">
 			<div class="services">
 				<?php				
 				foreach($node->field_service_title['und'] as $key => $value){
