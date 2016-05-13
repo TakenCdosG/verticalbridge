@@ -1728,7 +1728,7 @@ a.sublogo img{
 .call_desc{
     font-size: 16px;
 }
-.call_btn, .b_call_btn{
+.call_btn{
     background-color: #8bc540;
     padding:5px 10px;
     font-size: 20px;
@@ -1740,9 +1740,7 @@ a.sublogo img{
 .call_btn a{
     color: #ffffff;
 }
-
-.b_call_btn a{
-    color: #ffffff;
+.call_btn a.bold{
     font-weight: 600;
 }
 .call_to_action_block:after{
@@ -2168,7 +2166,7 @@ a.active-trail.active{
         width:100% !important;
         display:block;
     }
-    .call_btn, .b_call_btn{
+    .call_btn{
         position: initial;
         top:0;
         float: left;
