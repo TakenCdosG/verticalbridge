@@ -1739,9 +1739,10 @@ a.sublogo img{
 }
 .call_btn a{
     color: #ffffff;
-}
-.call_btn a.bold{
     font-weight: 600;
+}
+.call_btn a.light{
+    font-weight: 400 !important;
 }
 .call_to_action_block:after{
     content: '';
