@@ -1761,6 +1761,9 @@ a.sublogo img{
 .node-type-careers .form-managed-file *{
     vertical-align: top;
 }
+.button{
+    font-weight: 400 !important;
+}
 .button.standard{
     padding-top:8px !important;
     padding-bottom: 8px !important;
