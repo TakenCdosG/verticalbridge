@@ -2119,7 +2119,7 @@ a.active-trail.active{
     }
     .button.standard + .button.standard{
         margin-left: 0;
-        margin-top:20px;
+        margin:20px 0;
     }
 }
 
