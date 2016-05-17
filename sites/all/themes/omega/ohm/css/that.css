@@ -2108,6 +2108,7 @@ a.active-trail.active{
     z-index: 100;
 }
 .flex-control-paging li a{
+    border:1px solid #737373 !important;
     border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
 }
