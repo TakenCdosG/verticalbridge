@@ -107,11 +107,10 @@
       if($content['field_bottom_logos']==0){
           print '<div class="top_logos">'.render($content['field_logos']).'</div>';
           print render($content['body']);
-        }
       }else{
           print render($content['body']);
           print '<div class="bottom_logos">'.render($content['field_logos']).'</div>';
-      
+      }
 
       ?>
           
