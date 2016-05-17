@@ -102,8 +102,7 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']); ?>
-      <?php 
-      
+      <?php
       if($content['field_bottom_logos']==0){
           print '<div class="top_logos">'.render($content['field_logos']).'</div>';
           print render($content['body']);
