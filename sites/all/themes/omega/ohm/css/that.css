@@ -325,7 +325,7 @@ html {
 
 body {
     color: #676767;
-    font-size: .85rem;
+    font-size: 15px;
 	overflow-x:hidden;
 }
 
@@ -1552,9 +1552,11 @@ li.expanded.active-trail a{
 
 
 /*CUSTOM*/
-body{
-    font-family: 'Open Sans', sans-serif;
+body, .ui-widget{
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px !important;
 }
+
 /*header*/
 .l-header{
     background: #59595c;
@@ -1925,6 +1927,7 @@ a:focus{
 }
 .service-description{
     margin-top: 30px;
+    text-align: center;
 }
 .home-news{
     border: none;
