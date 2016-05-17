@@ -2108,8 +2108,8 @@ a.active-trail.active{
     z-index: 100;
 }
 .flex-control-paging li a{
-    border-radius: none !important;
-    -webkit-border-radius: none !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
 }
 
 /*footer*/
