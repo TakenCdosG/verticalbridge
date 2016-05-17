@@ -84,6 +84,7 @@
 
       var number = 0;
       var playstatus;
+      var playing = false;
       'use strict';
       $(function() {
         var con = 0;
@@ -101,15 +102,19 @@
         });
         /*controller functions*/
         function changetag() {
-          if($('.news-list.news-'+number).prop("tagName") == 'DIV'){
-            $('.news-list.news-'+number).replaceTag('<marquee>', true);
+          if($('.home-news').prop("tagName") == 'DIV'){
+            $('.home-news').replaceTag('<marquee>', true);
             $('.home-news, .news-list').css('width',$('.newscontainer').width()- con);
+            $('.news-list').each(function (i) {
+              $(this).css('display', 'block');
+            });
           }
         }
         function stop() {
           $('.home-news-controller.middle').css("background-image","url(../sites/all/themes/omega/ohm/images/arrow-play.png)");
-          $('.news-list.news-'+number).replaceTag('<div>', true);
+          $('.home-news').replaceTag('<div>', true);
           $('.home-news, .news-list').css('width',$('.newscontainer').width()- con);
+            
         }
         function marquee_mobile() {
           if($(window).width()<788){
@@ -126,6 +131,10 @@
         var total_news = $('.view-content .news-list').length;
         $('.home-news-controller.end').click(function() {
           stop();
+          if(playing == true){
+            number = 0;
+            playing = false;
+          }
           $('.home-news, .news-list').css('width',$('.newscontainer').width()- con);
           if(number<(total_news-1)){
             $('.news-list.news-'+number).css("display", "none");
@@ -134,6 +143,10 @@
         });
         $('.home-news-controller.begin').click(function() {
           stop();
+          if(playing == true){
+            number = 0;
+            playing = false;
+          }
           if(number>0){
             number-=1;
           }
@@ -141,6 +154,7 @@
         });
         $('.home-news-controller.middle').click(function() {
           $('.home-news-controller.middle').css("background-image","url(../sites/all/themes/omega/ohm/images/arrow-pause.png)");
+          playing = true;
           changetag();
           if(playstatus==0){
             $('.news-list').mouseleave();

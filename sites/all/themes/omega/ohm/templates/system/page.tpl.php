@@ -130,7 +130,8 @@
     <?php //print render($page['sidebar_first']); ?>
     <?php //print render($page['sidebar_second']); ?>
   </div>
-
+  
+  <div style="clear: both"></div>
   <footer class="l-footer" role="contentinfo">
 		<?php print render($page['footer']); ?>
 		<div class="lower-footer">
