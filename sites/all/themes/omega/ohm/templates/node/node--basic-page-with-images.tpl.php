@@ -102,8 +102,19 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']); ?>
-      <?php print render($content['field_logos']);?>
-          <?php print render($content['body']);?>
+      <?php 
+      if(!empty($content['field_logos'])){
+        if($content['field_bottom_logos']==0){
+          print '<div class="top_logos">'.render($content['field_logos']).'</div>';
+          print render($content['body']);
+        }
+      }else{
+          print render($content['body']);
+          print '<div class="bottom_logos">'.render($content['field_logos']).'</div>';
+      }
+
+      ?>
+          
 	<?php if (!empty($sitemap)) { ?>
 		<?php foreach ($sitemap as $type => $entries) { ?>
 			<h3><?php echo $type; ?></h3>

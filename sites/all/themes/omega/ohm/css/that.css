@@ -1778,25 +1778,25 @@ a.sublogo img{
 .button.standard + .button.standard{
     margin-left:40px
 }
-.page-node-15392 .field__item, .node-type-basic-page-with-tabs .field__item{
+.node-type-basic-page-with-images .field__item, .node-type-basic-page-with-tabs .field__item{
     display: inline-block !important;
     margin:10px !important;
 }
 .field--name-field-logos{
     text-align: center;
 }
-.node-type-basic-page-with-tabs .field--name-field-logos{
+.bottom_logos .field--name-field-logos{
     border-top:1px solid #dedede;
     padding-top:2em;
 }
 .node-type-basic-page-with-tabs .ui-tabs-vertical .ui-tabs-nav{
     font-weight: 700;
 }
-.page-node-15392 .field--name-field-logos{
+.top_logos .field--name-field-logos{
     border-bottom:1px solid #dedede;
     padding-bottom:2em;
 }
-.page-node-15392 .field__items img, .node-type-basic-page-with-tabs .field__items img{
+.node-type-basic-page-with-images .field__items img, .node-type-basic-page-with-tabs .field__items img{
     height: auto;
     width:180px;
 }
