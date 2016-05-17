@@ -103,7 +103,7 @@
       hide($content['comments']);
       hide($content['links']); ?>
       <?php
-      if($content['field_bottom_logos']==0){
+      if($node->field_bottom_logos['und'][0]['value']==0){
           print '<div class="top_logos">'.render($content['field_logos']).'</div>';
           print render($content['body']);
       }else{
