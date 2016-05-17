@@ -2103,7 +2103,14 @@ a:focus{
 a.active-trail.active{
     color:#8bc540 !important;
 }
-
+.flex-control-nav{
+    bottom: 5px !important;
+    z-index: 100;
+}
+.flex-control-paging li a{
+    border-radius: none !important;
+    -webkit-border-radius: none !important;
+}
 
 /*footer*/
 .lower-footer{
