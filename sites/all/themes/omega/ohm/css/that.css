@@ -2111,7 +2111,7 @@ a.active-trail.active{
     font-weight: 600;
 }
 
-@media (max-width:800px) {
+@media (max-width:823px) {
     .button.standard{
         display: inline-block; 
         float: left;
