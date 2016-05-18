@@ -103,16 +103,15 @@
       hide($content['comments']);
       hide($content['links']); ?>
       <?php
-      if($node->field_bottom_logos['und'][0]['value']==0){
-          print '<div class="top_logos">'.render($content['field_logos']).'</div>';
-          print render($content['body']);
-      }else{
-          print render($content['body']);
-          print '<div class="bottom_logos">'.render($content['field_logos']).'</div>';
-      }
-
-      ?>
-          
+    if(!empty($node->field_bottom_logos) && $node->field_bottom_logos['und'][0]['value']==0){
+        print '<div class="top_logos">'.render($content['field_logos']).'</div>'; 
+    }
+    print render($content['body']);
+    if(!empty($node->field_bottom_logos) && $node->field_bottom_logos['und'][0]['value']!=0){
+        
+        print '<div class="bottom_logos">'.render($content['field_logos']).'</div>';
+    }
+    ?>       
 	<?php if (!empty($sitemap)) { ?>
 		<?php foreach ($sitemap as $type => $entries) { ?>
 			<h3><?php echo $type; ?></h3>
