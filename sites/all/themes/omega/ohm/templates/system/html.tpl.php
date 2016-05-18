@@ -189,10 +189,10 @@
         if($("body").hasClass("page-events") ||  p_title == "Events"){
           $('.internal-header').css("background-image","url(sites/all/themes/omega/ohm/images/events-bg.jpg)")
         }
-        if($("body").hasClass("page-press" || p_title == "Press")){
+        if($("body").hasClass("page-press") || p_title == "Press"){
           $('.internal-header').css("background-image","url(sites/all/themes/omega/ohm/images/press-bg.jpg)")
         }
-        if($("body").hasClass("page-about-us-newsroom" || p_title == "News")){
+        if($("body").hasClass("page-about-us-newsroom") || p_title == "News"){
           $('.internal-header').css("background-image","url("+bpath+"/sites/all/themes/omega/ohm/images/news-bg-2.jpg)")
         }
       });
