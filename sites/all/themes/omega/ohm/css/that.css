@@ -1720,15 +1720,15 @@ a.sublogo img{
     padding:32px 42px;
     margin-top: 40px;
 }
-.call_title, .call_desc{
+.call_title, .call_desc, .call_all p{
     display:block !important;
     padding-right: 232px;
 }
-.call_title{
+.call_title, .call_all p:first-child{
     font-size: 23px;
     margin-bottom: 10px;
 }
-.call_desc{
+.call_desc, .call_all p{
     font-size: 16px;
 }
 .call_btn{
@@ -2205,7 +2205,7 @@ a.active-trail.active{
         margin-top: 20px;
         font-size: 1.5rem;
     }
-    .call_title, .call_desc{
+    .call_title, .call_desc, .call_all p{
         padding:0;
     }
     .career_webform, .career_link, .contact_webform, .contact_content{
