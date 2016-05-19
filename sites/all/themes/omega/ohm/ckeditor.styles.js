@@ -32,6 +32,7 @@ if(typeof(CKEDITOR) !== 'undefined') {
             { name : 'Call to Action Title'		, element : 'span', attributes : { 'class' : 'call_title' } },
             { name : 'Call to Action Description'		, element : 'span', attributes : { 'class' : 'call_desc' } },
             { name : 'Call to Action Button'		, element : 'span', attributes : { 'class' : 'call_btn' } },
+            { name : 'Green Bold'        , element : 'span', attributes : { 'class' : 'green_bold' } },
 
             // These are core styles available as toolbar buttons. You may opt enabling
             // some of them in the "Styles" drop-down list, removing them from the toolbar.

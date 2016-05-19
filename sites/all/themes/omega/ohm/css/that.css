@@ -2117,6 +2117,11 @@ a.active-trail.active{
     border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
 }
+.green_bold{
+    font-size: 17px !important;
+    color:#8bc540 !important;
+    font-weight: bold;
+}
 
 /*footer*/
 .lower-footer{
