@@ -133,13 +133,17 @@
 				<?php
 				} ?>
 			</div>
-		<?php
-		print render($page['home_blocks']); ?>
+		  <div style="clear: both"></div>
+	      <?php if(!empty($node->field_cta_content) or !empty($node->field_cta_button)){ ?>
+	        <div class="call_to_action_block">
+	          <div class="call_all"><?php print($node->field_cta_content['und'][0]['value']); ?></div> 
+	          <?php if(!empty($node->field_cta_button)){ ?>
+	            <p><span class="call_btn"><a class="light" href="<?php print($node->field_cta_button['und'][0]['url']); ?>"><?php print($node->field_cta_button['und'][0]['title']); ?></a></span></p>
+	          <?php } ?>
+	        </div>
+	      <?php } ?> 
 		</div>
 	</div>
-
-
-
 	<div style="clear: both"></div>
 	<footer class="l-footer" role="contentinfo">
 		<br />
