@@ -1562,7 +1562,7 @@ body, .ui-widget{
 .l-header{
     background: #59595c;
     margin-top:12px;
-   
+    position: relative;
 }
 a.sublogo{
     width:244px;
@@ -2122,6 +2122,20 @@ a.active-trail.active{
     color:#8bc540 !important;
     font-weight: bold;
 }
+.social-icons{
+    position: absolute;
+    top:8px;
+    right: 40px;
+    display: inline-block;
+    z-index: 100;
+}
+.linkedin{ 
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/linkedin.png);
+    background-size: cover;
+    float: left;
+}
 
 /*footer*/
 .lower-footer{
@@ -2223,5 +2237,8 @@ a.active-trail.active{
         font-size: 1.3em;
         width:200px;
         padding: 20px;
+    }
+    .social-icons{
+        display: none;
     }
 }
