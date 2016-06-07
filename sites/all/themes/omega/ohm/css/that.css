@@ -1919,9 +1919,10 @@ a:focus{
 }
 .service h2{
     display: inline-block;
-    display:table-cell;
+    /*display:table-cell;*/
+    margin-top: 8%;
     vertical-align:middle;
-    padding-left:10px;
+    padding-left:20px;
     color:#58595b !important;
 }
 .service-description{
