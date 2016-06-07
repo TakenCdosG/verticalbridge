@@ -1908,7 +1908,7 @@ a:focus{
     margin-bottom:0;
 }
 .service-image{
-    text-align: left;
+    text-align: center;
     position: relative;
     display: table;
     margin:0 auto;
@@ -1919,11 +1919,9 @@ a:focus{
 }
 .service h2{
     display: inline-block;
-    /*display:table-cell;
-    vertical-align:middle;*/
-    position: absolute;
-    top:26%;
-    padding-left:20px;
+    display:table-cell;
+    vertical-align:middle;
+    padding-left:10px;
     color:#58595b !important;
 }
 .service-description{
