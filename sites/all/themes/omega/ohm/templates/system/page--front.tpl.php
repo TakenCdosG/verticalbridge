@@ -123,7 +123,7 @@
 						<?php 
 							$url = file_create_url($node->field_service_image['und'][$key]['uri']);
 						?>
-						<img src="<?php print $url ?>"/>
+						<a href="<?php print $node->field_service_link['und'][$key]['value'];?>"><img src="<?php print $url ?>"/></a>
 						<h2><?php print $value['value'];?></h2>
 					</div>
 
