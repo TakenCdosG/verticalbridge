@@ -120,10 +120,10 @@
             <h2>Sign Up for Updates</h2>
             <div style="display:none" class="indicates-required"><span class="asterisk">*</span> indicates required</div>
             <div class="mc-field-group input-group">
-                <ul><li><input type="checkbox" value="1" name="group[7449][1]" id="mce-group[7449]-7449-0"><label for="mce-group[7449]-7449-0">Media Coverage</label></li>
-            <!--<li><input type="checkbox" value="2" name="group[7449][2]" id="mce-group[7449]-7449-1"><label for="mce-group[7449]-7449-1">VB Acquisitions</label></li>-->
-            <li><input type="checkbox" value="4" name="group[7449][4]" id="mce-group[7449]-7449-2"><label for="mce-group[7449]-7449-2">Press Releases</label></li>
-            </ul>
+              <ul>
+                <li><input type="checkbox" value="1" name="group[7449][1]" id="mce-group[7449]-7449-0"><label for="mce-group[7449]-7449-0">Media Coverage</label></li>
+                <li><input type="checkbox" value="4" name="group[7449][4]" id="mce-group[7449]-7449-1"><label for="mce-group[7449]-7449-1">Press Releases</label></li>
+              </ul>
             </div>
             <div class="mc-field-group">
             <label for="mce-EMAIL"></label>
