@@ -107,6 +107,8 @@
             $('.home-news, .news-list').css('width',$('.newscontainer').width()- con);
             $('.news-list').each(function (i) {
               $(this).css('display', 'block');
+              $(this).css('width', 'auto');
+              $(this).css('margin-left', '60px');
             });
           }
         }
@@ -114,6 +116,9 @@
           $('.home-news-controller.middle').css("background-image","url(../sites/all/themes/omega/ohm/images/arrow-play.png)");
           $('.home-news').replaceTag('<div>', true);
           $('.home-news, .news-list').css('width',$('.newscontainer').width()- con);
+          $('.news-list').each(function (i) {
+              $(this).css('margin-left', '20px');
+          });
             
         }
         function marquee_mobile() {
