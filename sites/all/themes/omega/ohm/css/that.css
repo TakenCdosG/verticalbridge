@@ -1799,7 +1799,6 @@ a.sublogo img{
 }
 .node-type-basic-page-with-images .field__items img, .node-type-basic-page-with-tabs .field__items img{
     height: auto;
-    width:180px;
 }
 .wwd{
     width:30%;
