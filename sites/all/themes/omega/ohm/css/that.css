@@ -1781,7 +1781,7 @@ a.sublogo img{
 }
 .node-type-basic-page-with-images .field__item, .node-type-basic-page-with-tabs .field__item{
     display: inline-block !important;
-    margin:10px !important;
+    margin:10px 30px !important;
 }
 .field--name-field-logos{
     text-align: center;
