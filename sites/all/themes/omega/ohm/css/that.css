@@ -2200,7 +2200,10 @@ a.active-trail.active{
     .contact-name, .contact-email{
     width: 100% !important;
     margin-right:0;
-}
+    }
+    #block-views-home-slider-block h1{
+        height: auto;
+    }
     .node-type-basic-page-with-tabs .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:after{
         display: none;
     }
