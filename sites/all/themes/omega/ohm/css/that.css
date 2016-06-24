@@ -1797,8 +1797,12 @@ a.sublogo img{
     border-bottom:1px solid #dedede;
     padding-bottom:2em;
 }
-.node-type-basic-page-with-images .field__items img, .node-type-basic-page-with-tabs .field__items img{
+.node-type-basic-page-with-tabs .field__items img{
     height: auto;
+}
+.node-type-basic-page-with-images .field__items img{
+    height:44px;
+    width: auto;
 }
 .wwd{
     width:30%;
