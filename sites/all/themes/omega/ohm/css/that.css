@@ -1801,8 +1801,7 @@ a.sublogo img{
     height: auto;
 }
 .node-type-basic-page-with-images .field__items img{
-    height:44px;
-    width: auto;
+    height:auto;
 }
 .wwd{
     width:30%;
