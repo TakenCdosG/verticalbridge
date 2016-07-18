@@ -1279,7 +1279,7 @@ a.back-button {
     color: #fff;
     font-size: 1rem;
     text-shadow: 1px 1px 2px #000;
-    height: 96px;
+    height: auto;
 }
 
 .l-region--navigation .menu li a:hover, .l-region--navigation .menu li ul li a:hover {
