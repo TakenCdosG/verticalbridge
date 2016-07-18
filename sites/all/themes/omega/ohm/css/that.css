@@ -1387,6 +1387,13 @@ li.expanded.active-trail a{
     }
 
 }
+@media (min-width:953px) {
+    .l-region--navigation .menu li a {
+    position: relative;
+    top: 22px; 
+    }
+
+}
 
 .l-region--subnav {
     background: #cacacb;
