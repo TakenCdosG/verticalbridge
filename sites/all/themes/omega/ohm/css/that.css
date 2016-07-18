@@ -1349,6 +1349,8 @@ li.expanded.active-trail a{
 .l-region--navigation .menu li .menu li a {
     padding: 10px;
     font-family: Arial,serif;
+    position: relative;
+    top: 0;
 }
 
 @media (max-width:604px) {
