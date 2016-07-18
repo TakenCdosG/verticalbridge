@@ -1360,7 +1360,7 @@ li.expanded.active-trail a{
 
 }
 
-@media (max-width:604px) {
+@media (max-width:954px) {
     .l-region--navigation .menu li .menu {
         position: relative;
         text-align: center;
@@ -1389,7 +1389,7 @@ li.expanded.active-trail a{
     }
 
 }
-@media (min-width:953px) {
+@media (min-width:954px) {
     .l-region--navigation .menu li a {
     position: relative;
     top: 22px; 
